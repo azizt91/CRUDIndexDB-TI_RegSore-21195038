@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App with IndexedDB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CRUD App with IndexedDB</h1>
+    <form id="form">
+        <input type="text" id="name" placeholder="Name" required>
+        <input type="text" id="nim" placeholder="NIM" required>
+        <button type="submit" id="add">Add</button>
+    </form>
+        
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>NIM</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="records"></tbody>
+    </table>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn" class="close">&times;</span>
+            <h2>Edit Record</h2>
+            <form id="editForm">
+                <input type="text" id="editName" placeholder="Name" required>
+                <input type="text" id="editnim" placeholder="NIM" required>
+                <button type="submit" id="update">Update</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 CRUD App with IndexedDB - Built with chat GPT</p>
+    </footer>
+</body>
+</html>
+
+
